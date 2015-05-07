@@ -50,7 +50,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        UIImageView *bg = [[UIImageView alloc ] initWithImage:[UIImage imageNamed:@"refresh-view-bg"]];
+        UIImageView *bg = [[UIImageView alloc ] initWithImage:[UIImage imageNamed:XMRefreshImagePathWithName(@"refresh-view-bg")]];
         bg.frame = self.bounds;
         bg.contentMode = UIViewContentModeScaleAspectFill;
         bg.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
@@ -70,9 +70,10 @@
         
         
         CALayer *airplaneLayer = [CALayer layer];
-        UIImage *airplaneImage = [UIImage imageNamed:@"icon-plane"];
+        UIImage *airplaneImage = [UIImage imageNamed:
+                                  XMRefreshImagePathWithName(@"icon-plane")];
         airplaneLayer.contents =  (__bridge id)(airplaneImage.CGImage);
-        airplaneLayer.bounds = CGRectMake(0, 0, airplaneImage.size.width, airplaneImage.size.height);
+        airplaneLayer.bounds = CGRectMake(0, 0, 35 ,35);
         airplaneLayer.opacity = 0.0;
         [self.layer addSublayer:airplaneLayer];
         self.airplaneLayer = airplaneLayer;

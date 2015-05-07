@@ -16,3 +16,7 @@ extern const CGFloat XMRefreshHeaderHeight;
  *  动画时间
  */
 extern const CGFloat XMRefreshAnimationDuration;
+
+
+// 图片路径
+#define XMRefreshImagePathWithName(file) [@"XMRefresh.bundle" stringByAppendingPathComponent:file]
