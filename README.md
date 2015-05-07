@@ -1,5 +1,5 @@
 # XMRefresh
-Custom refreshView . It is very easy use
+Custom refreshView . It is very easy to use
   自定义刷新控件－带动画
 ========================
   截图：
