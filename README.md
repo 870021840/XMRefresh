@@ -10,3 +10,5 @@ Custom refreshView . It is very easy use
         //在这里做网络请求
     }];
     [self.headView endRefreshig];
+
+感谢MJ老师提供思路，raywenderlich动画教程
